@@ -12,6 +12,10 @@
 #include <dse/ncodec/interface/pdu.h>
 #include <dse/ncodec/schema/abs/stream/pdu_builder.h>
 
+#ifdef _WIN32
+#define EBADE 52
+#endif
+
 typedef struct FlexrayNodeState {
     NCodecPduFlexrayNodeIdentifier node_ident;
 
